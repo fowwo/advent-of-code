@@ -9,6 +9,19 @@ public class _5a {
 
     public static void main(String[] args) {
 
+        /*
+            This code is not entirely correct, although it (luckily) returned the same answer.
+            On searching a second half, the code should split the seats like:
+                    [ 1  2  3  4 ]
+                                   [ 5  6  7  8 ]
+            However, I have the seats being split like:
+                    [ 1  2  3  4 ]
+                             [ 4  5  6  7  8 ]
+            As a result, the code fails to find boarding passes for the eighth column and
+            sometimes matches two boarding passes to the same seat. Somehow, this implementation
+            still lead me to correct answer for both parts.
+         */
+
         try {
 
             File f = new File("input/2020/5.txt");

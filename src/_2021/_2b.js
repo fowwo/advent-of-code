@@ -1,3 +1,4 @@
+// December 1st, 2021
 const fs = require("fs");
 
 let list = fs.readFileSync("input/2021/2.txt", "utf8").split('\r\n');

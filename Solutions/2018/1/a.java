@@ -8,7 +8,7 @@ import java.io.FileNotFoundException;
 public class _1a {
 	public static void main(String[] args){
 		try {
-			File input = new File("input/2018/1.txt");
+			File input = new File("input.txt");
 			Scanner s = new Scanner(input);
 			int sum = 0;
 			while (s.hasNextLine()){

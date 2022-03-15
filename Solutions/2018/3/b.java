@@ -11,7 +11,7 @@ public class _3b {
 	public static void main(String args[]) {
 
 		try {
-			File input = new File("input/2018/3.txt");
+			File input = new File("input.txt");
 			Scanner s = new Scanner(input);
 
 			// Create grid

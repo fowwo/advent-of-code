@@ -15,7 +15,7 @@ public class _6b {
 
 		try {
 
-			File f = new File("input/2018/6.txt");
+			File f = new File("input.txt");
 			Scanner s = new Scanner(f);
 
 			while (s.hasNextLine()) {

@@ -15,7 +15,7 @@ public class _4a {
 
         try {
 
-            File f = new File("input/2018/4.txt");
+            File f = new File("input.txt");
             Scanner s = new Scanner(f);
             List<String[]> list = new ArrayList<>();
 

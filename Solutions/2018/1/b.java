@@ -9,7 +9,7 @@ import java.util.ArrayList;
 public class _1b {
 	public static void main(String[] args){
 		try {
-			File input = new File("input/2018/1.txt");
+			File input = new File("input.txt");
 			Scanner s = new Scanner(input);
 			ArrayList<Integer> list = new ArrayList<Integer>();
 			list.add(0);

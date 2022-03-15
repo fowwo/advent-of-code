@@ -11,7 +11,7 @@ public class _5a {
 
         try {
 
-            File f = new File("input/2018/5.txt");
+            File f = new File("input.txt");
             Scanner s = new Scanner(f);
             String input = s.nextLine();
             s.close();

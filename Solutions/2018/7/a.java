@@ -21,7 +21,7 @@ public class _7a {
 
 		try {
 
-			File f = new File("input/2018/7.txt");
+			File f = new File("input.txt");
 			Scanner s = new Scanner(f);
 
 			while (s.hasNextLine()) {

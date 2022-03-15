@@ -11,7 +11,7 @@ public class _2b {
 	public static void main(String args[]) {
 
 		try {
-			File input = new File("input/2018/2.txt");
+			File input = new File("input.txt");
 			Scanner s = new Scanner(input);
 			ArrayList<String> list = new ArrayList<String>();
 

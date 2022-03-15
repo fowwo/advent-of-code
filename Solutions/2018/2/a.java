@@ -10,7 +10,7 @@ public class _2a {
 	public static void main(String args[]) {
 
 		try {
-			File input = new File("input/2018/2.txt");
+			File input = new File("input.txt");
 			Scanner s = new Scanner(input);
 			int two = 0;
 			int three = 0;

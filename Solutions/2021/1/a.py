@@ -1,6 +1,6 @@
 # December 25th, 2021
 
-file = open("input/2021/1.txt", "r")
+file = open(f"{__file__}/../input.txt", "r")
 lines = file.read().split("\n")
 
 count = 0

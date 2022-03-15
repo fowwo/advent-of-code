@@ -1,11 +1,12 @@
 // December 1st, 2021
 const fs = require("fs");
 
-let list = fs.readFileSync("input/2021/2.txt", "utf8").split('\r\n');
+let list = fs.readFileSync(`${__dirname}/input.txt`, "utf8").split('\r\n');
 list.pop();
 
 let horizontal = 0;
 let depth = 0;
+let aim = 0;
 for (var i = 0; i < list.length; i++) {
 	let arr = list[i].split(" ");
 	let direction = arr[0];
@@ -13,12 +14,13 @@ for (var i = 0; i < list.length; i++) {
 	switch (direction) {
 		case "forward":
 			horizontal += value;
+			depth += aim * value;
 			break;
 		case "down":
-			depth += value;
+			aim += value;
 			break;
 		case "up":
-			depth -= value;
+			aim -= value;
 			break;
 	}
 }

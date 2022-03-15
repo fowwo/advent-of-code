@@ -1,6 +1,6 @@
 # March 10th, 2022
 
-file = open("input/2021/4.txt", "r")
+file = open(f"{__file__}/../input.txt", "r")
 
 draw = [int(x) for x in file.readline().strip().split(',')]
 file.readline() # Empty line after draw order
@@ -39,7 +39,6 @@ def check(board):
 	return False
 
 for number in draw:
-	copy = [board for board in boards]
 	for board in boards:
 		found = False
 		for row in board:
@@ -48,17 +47,13 @@ for number in draw:
 					row[i] = "x"
 					win = check(board)
 					if win:
-						if len(copy) > 1:
-							copy.remove(board)
-						else:
-							score = 0
-							for row in board:
-								for cell in row:
-									if cell != 'x':
-										score += cell
-							print(score * number)
-							exit()
+						score = 0
+						for row in board:
+							for cell in row:
+								if cell != 'x':
+									score += cell
+						print(score * number)
+						exit()
 					found = True
 					break
 			if found: break
-	boards = copy

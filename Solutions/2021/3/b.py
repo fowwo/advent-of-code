@@ -1,6 +1,6 @@
 # December 3rd, 2021
 
-file = open("input/2021/3.txt", "r")
+file = open(f"{__file__}/../input.txt", "r")
 line = file.readline().strip()
 length = len(line)
 

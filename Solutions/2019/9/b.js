@@ -1,7 +1,7 @@
 // March 14th, 2022
 
 const fs = require("fs");
-const instructions = fs.readFileSync(`${__dirname}/../../input/2019/9.txt`, "utf8").trim().split(',').map(x => parseInt(x));
+const instructions = fs.readFileSync(`${__dirname}/input.txt`, "utf8").trim().split(',').map(x => parseInt(x));
 
 class Computer {
 	constructor(instructions, input = []) {
@@ -139,6 +139,6 @@ class Computer {
 	}
 }
 
-const opcode = new Computer(instructions, [1]);
+const opcode = new Computer(instructions, [2]);
 opcode.run();
 console.log(opcode.output[0]);

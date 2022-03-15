@@ -2,7 +2,7 @@
 // Resolving initial opcode puzzles to make future opcode puzzles easier
 
 const fs = require("fs");
-const instructions = fs.readFileSync(`${__dirname}/../../input/2019/7.txt`, "utf8").trim().split(',').map(x => parseInt(x));
+const instructions = fs.readFileSync(`${__dirname}/input.txt`, "utf8").trim().split(',').map(x => parseInt(x));
 
 class Computer {
 	constructor(instructions, input = []) {
@@ -103,35 +103,6 @@ class Computer {
 	}
 }
 
-function permute(...list) {
-	let permutations = [[list[0]]];
-	for (var i = 1; i < list.length; i++) {
-		let temp = [];
-		for (var perm of permutations) {
-			for (var j = 0; j <= perm.length; j++) {
-				copy = perm.slice();
-				copy.splice(j, 0, list[i]);
-				temp.push(copy);
-			}
-		}
-		permutations = temp;
-	}
-	return permutations;
-}
-
-const permutations = permute(0, 1, 2, 3, 4);
-let max = 0;
-for (var phase of permutations) {
-	const a = new Computer(instructions, [phase[0], 0]);
-	a.run();
-	const b = new Computer(instructions, [phase[1], a.output[0]]);
-	b.run();
-	const c = new Computer(instructions, [phase[2], b.output[0]]);
-	c.run();
-	const d = new Computer(instructions, [phase[3], c.output[0]]);
-	d.run();
-	const e = new Computer(instructions, [phase[4], d.output[0]]);
-	e.run();
-	max = Math.max(max, e.output[0]);
-}
-console.log(max);
+const opcode = new Computer(instructions, [5]);
+opcode.run();
+console.log(opcode.output.at(-1));

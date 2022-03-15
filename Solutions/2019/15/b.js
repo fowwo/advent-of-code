@@ -1,8 +1,8 @@
 // March 14th, 2022
 
 const fs = require("fs");
-const Computer = require("./Computer");
-const instructions = fs.readFileSync(`${__dirname}/../../input/2019/15.txt`, "utf8").trim().split(',').map(x => parseInt(x));
+const Computer = require("../Computer");
+const instructions = fs.readFileSync(`${__dirname}/input.txt`, "utf8").trim().split(',').map(x => parseInt(x));
 
 let computers = [[ new Computer(instructions), 0, 0 ]];
 const known = new Set(["0,0"]);

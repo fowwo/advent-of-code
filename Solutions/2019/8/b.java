@@ -9,7 +9,7 @@ import java.io.FileNotFoundException;
 public class _8b {
 	public static void main(String[] args){
 		try {
-			File input = new File("input/2019/8.txt");
+			File input = new File("input.txt");
 			Scanner s = new Scanner(input);
 			String line = s.nextLine();
 			char[][] image = new char[25][6];

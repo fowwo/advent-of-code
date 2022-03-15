@@ -2,11 +2,14 @@
 // Resolving initial opcode puzzles to make future opcode puzzles easier
 
 const fs = require("fs");
-const instructions = fs.readFileSync(`${__dirname}/../../input/2019/2.txt`, "utf8").trim().split(',').map(x => parseInt(x));
+let instructions = fs.readFileSync(`${__dirname}/input.txt`, "utf8");
+instructions = instructions.trim().split(',').map(x => parseInt(x));
+instructions[1] = 12;
+instructions[2] = 2;
 
 class Computer {
 	constructor(instructions) {
-		this.memory = instructions.slice();
+		this.memory = instructions;
 		this.position = 0;
 	}
 	execute() {
@@ -34,19 +37,10 @@ class Computer {
 		this.position += 4;
 	}
 	run() {
-		while (this.memory[this.position] !== 99) this.execute();
+		while (this.memory[this.position] !== 99)	this.execute();
 	}
 }
 
-for (var noun = 0; noun < 100; noun++) {
-	for (var verb = 0; verb < 100; verb++) {
-		const opcode = new Computer(instructions);
-		opcode.memory[1] = noun;
-		opcode.memory[2] = verb;
-		opcode.run();
-		if (opcode.memory[0] === 19690720) {
-			console.log(100 * noun + verb);
-			process.exit(0);
-		}
-	}
-}
+const opcode = new Computer(instructions);
+opcode.run();
+console.log(opcode.memory[0]);

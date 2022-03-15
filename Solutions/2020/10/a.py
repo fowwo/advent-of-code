@@ -1,6 +1,6 @@
 # December 3rd, 2021
 
-file = open("input/2020/10.txt", "r")
+file = open(f"{__file__}/../input.txt", "r")
 arr = []
 
 line = file.readline().strip()

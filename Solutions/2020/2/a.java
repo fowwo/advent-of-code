@@ -1,6 +1,4 @@
 // December 7th, 2020
-package _2020;
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
@@ -11,7 +9,7 @@ public class _2a {
 
         try {
 
-            File f = new File("input/2020/2.txt");
+            File f = new File("input.txt");
             Scanner s = new Scanner(f);
             int total = 0;
 

@@ -1,6 +1,4 @@
 // December 3rd, 2020
-package _2020;
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
@@ -15,7 +13,7 @@ public class _3b {
 
         try {
 
-            File f = new File("input/2020/3.txt");
+            File f = new File("input.txt");
             Scanner s = new Scanner(f);
             List<String> list = new ArrayList<>();
             while (s.hasNextLine()) list.add(s.nextLine());

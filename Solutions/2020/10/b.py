@@ -1,6 +1,6 @@
 # March 10th, 2022
 
-file = open("input/2020/10.txt", "r")
+file = open(f"{__file__}/../input.txt", "r")
 adapters = [int(line.strip()) for line in file]
 adapters.append(0)
 adapters.sort()

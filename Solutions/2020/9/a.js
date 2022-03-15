@@ -2,7 +2,7 @@
 
 const fs = require("fs");
 
-var arr = fs.readFileSync("input/2020/9.txt", "utf-8").split("\r\n").map(x => parseInt(x));
+var arr = fs.readFileSync(`${__dirname}/input.txt`, "utf-8").split("\r\n").map(x => parseInt(x));
 arr.pop();
 
 const preamble = 25;

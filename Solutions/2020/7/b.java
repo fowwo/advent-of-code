@@ -1,6 +1,4 @@
 // December 8th, 2020
-package _2020;
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
@@ -15,7 +13,7 @@ public class _7b {
 
         try {
 
-            File f = new File("input/2020/7.txt");
+            File f = new File("input.txt");
             Scanner s = new Scanner(f);
             Map<String, List<Bags>> contain = new HashMap<>();
 

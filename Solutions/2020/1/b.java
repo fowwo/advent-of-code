@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class _1b {
+public class b {
 
     public static void main(String[] args) {
 

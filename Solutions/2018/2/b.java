@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 
-public class _2b {
+public class b {
 
 	public static void main(String args[]) {
 

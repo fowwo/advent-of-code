@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.io.File;
 import java.io.FileNotFoundException;
 
-public class _8a {
+public class a {
 	public static void main(String[] args){
 		try {
 			File input = new File("input.txt");

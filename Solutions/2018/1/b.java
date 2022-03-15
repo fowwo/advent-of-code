@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 
-public class _1b {
+public class b {
 	public static void main(String[] args){
 		try {
 			File input = new File("input.txt");

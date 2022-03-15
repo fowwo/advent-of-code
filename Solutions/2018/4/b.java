@@ -3,7 +3,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.*;
 
-public class _4b {
+public class b {
 
     public static void main(String[] args) {
 

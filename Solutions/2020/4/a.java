@@ -3,7 +3,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class _4a {
+public class a {
 
     public static void main(String[] args) {
 

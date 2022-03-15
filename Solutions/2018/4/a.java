@@ -1,6 +1,4 @@
 // April 5th, 2021
-package _2018;
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;

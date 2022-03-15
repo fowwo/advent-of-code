@@ -1,6 +1,4 @@
 // December 17th, 2019
-package _2019;
-
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.io.File;

@@ -1,7 +1,5 @@
 // March 10th, 2022
 // This was so incredibly hard to maintain because I solved Day 5 two and a half years before this.
-package _2019;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;

@@ -1,6 +1,4 @@
 // December 10th, 2019
-package _2018;
-
 import java.util.Scanner;
 import java.io.File;
 import java.io.FileNotFoundException;

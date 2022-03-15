@@ -1,6 +1,4 @@
 // December 12th, 2019
-package _2019;
-
 import java.util.ArrayList;
 
 public class _5a {

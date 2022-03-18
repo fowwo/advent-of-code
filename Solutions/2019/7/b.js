@@ -2,6 +2,7 @@
 // Resolving initial opcode puzzles to make future opcode puzzles easier
 
 const fs = require("fs");
+const Permutation = require("../../../Tool/JavaScript/Permutation");
 const instructions = fs.readFileSync(`${__dirname}/input.txt`, "utf8").trim().split(',').map(x => parseInt(x));
 
 class Computer {
@@ -109,23 +110,7 @@ class Computer {
 	}
 }
 
-function permute(...list) {
-	let permutations = [[list[0]]];
-	for (var i = 1; i < list.length; i++) {
-		let temp = [];
-		for (var perm of permutations) {
-			for (var j = 0; j <= perm.length; j++) {
-				copy = perm.slice();
-				copy.splice(j, 0, list[i]);
-				temp.push(copy);
-			}
-		}
-		permutations = temp;
-	}
-	return permutations;
-}
-
-const permutations = permute(5, 6, 7, 8, 9);
+const permutations = Permutation.create(5, 6, 7, 8, 9);
 let max = 0;
 for (var phase of permutations) {
 	const a = new Computer(instructions, [phase[0], 0]);

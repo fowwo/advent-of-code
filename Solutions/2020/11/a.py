@@ -1,4 +1,4 @@
-# August 6th, 2021
+# August 6th, 2022
 
 file = open(f"{__file__}/../input.txt", "r")
 seats = [ [ c for c in x.strip() ] for x in file.readlines() ]
